@@ -30,7 +30,7 @@ h4{
 
 p{
     font-size: 16px;
-    color: grey;
+    color: black;
 }
 
 .material-symbols-outlined {
@@ -142,7 +142,13 @@ main{
 }
 
 .top-img{
-    height: 400px;
+    height: 600px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-img{
+        height: 400px;
+    }
 }
 
 .container-title{
@@ -218,8 +224,31 @@ main{
     background-size: cover;
 }
 
-.photo-img{
-    width: 200px;
+.process-container-image{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.process-container-image p{
+    padding: 20px;
+}
+
+.process-container-image img{
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-container-image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.gallery-container-image img{
+    width: 300px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
